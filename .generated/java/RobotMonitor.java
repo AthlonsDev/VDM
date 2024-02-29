@@ -38,14 +38,16 @@ public class RobotMonitor {
     }
 
     private void MoveUp() {
-        if (previousMove != Move.UP && currentRow > MIN && currentRow < MAX) {
+        if (previousMove != Move.UP && currentRow >= MIN && currentRow <= MAX) {
             currentRow--;
             currentMove = Move.UP;
+        } else {
+            System.out.println("Invalid move");
         }
     }
 
     private void MoveDown() {
-        if (previousMove != Move.DOWN && currentRow < MAX && currentRow > MIN) {
+        if (previousMove != Move.DOWN && currentRow <= MAX && currentRow >= MIN) {
             currentRow++;
             currentMove = Move.DOWN;
         }
@@ -60,16 +62,19 @@ public class RobotMonitor {
     }
 
     private Move GetMove() {
+        previousMove = currentMove;
         return currentMove;
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        int _currentCol = 1;
+        int _currentRow = 1;
         RobotMonitor robot = new RobotMonitor(1, 1);
         System.out.println("Initial position: " + robot.GetCol() + " " + robot.GetRow());
         System.out.println("Where do you want to move? (UP, DOWN, LEFT, RIGHT)");
         String move = sc.next();
-        if (currentCol != 6 || currentRow != 6) {
+        if (_currentCol != 6 || _currentRow != 6) {
             switch (move) {
                 case "UP":
                     robot.MoveUp();
