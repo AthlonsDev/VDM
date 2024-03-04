@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 enum Move {
-    UP, DOWN, LEFT, RIGHT
+    UP, DOWN, LEFT, RIGHT,  NOMOVE
 }
 
 public class RobotMonitor {
@@ -11,8 +11,8 @@ public class RobotMonitor {
     int MIN = 1;
     int currentRow = 1;
     int currentCol = 1;
-    Move previousMove = Move.LEFT;
-    Move currentMove = Move.UP;
+    Move previousMove = Move.NOMOVE;
+    Move currentMove = Move.NOMOVE;
 
     // state variables
     public int col, row;
@@ -24,21 +24,25 @@ public class RobotMonitor {
 
     // Functions
     private void MoveRight() {
-        if (previousMove != Move.RIGHT && currentCol < MAX && currentCol > MIN) {
+        if (previousMove != Move.RIGHT || previousMove != Move.NOMOVE && currentCol <= MAX && currentCol >= MIN) {
             currentCol++;
             currentMove = Move.RIGHT;
+        } else {
+            System.out.println("Invalid move");
         }
     }
 
-    private void MoveLeft() {
-        if (previousMove != Move.LEFT && currentCol > MIN && currentCol < MAX) {
+    private void MoveLeft() { 
+        if (previousMove != Move.LEFT && previousMove != Move.NOMOVE && currentCol >= MIN && currentCol <= MAX) {
             currentCol--;
             currentMove = Move.LEFT;
+        } else {
+            System.out.println("Invalid move");
         }
     }
 
     private void MoveUp() {
-        if (previousMove != Move.UP && currentRow >= MIN && currentRow <= MAX) {
+        if (previousMove != Move.UP  && previousMove != Move.NOMOVE && currentRow >= MIN && currentRow <= MAX) {
             currentRow--;
             currentMove = Move.UP;
         } else {
@@ -50,6 +54,8 @@ public class RobotMonitor {
         if (previousMove != Move.DOWN && currentRow <= MAX && currentRow >= MIN) {
             currentRow++;
             currentMove = Move.DOWN;
+        } else {
+            System.out.println("Invalid move");
         }
     }
 
@@ -72,25 +78,32 @@ public class RobotMonitor {
         int _currentRow = 1;
         RobotMonitor robot = new RobotMonitor(1, 1);
         System.out.println("Initial position: " + robot.GetCol() + " " + robot.GetRow());
-        System.out.println("Where do you want to move? (UP, DOWN, LEFT, RIGHT)");
-        String move = sc.next();
-        if (_currentCol != 6 || _currentRow != 6) {
-            switch (move) {
-                case "UP":
-                    robot.MoveUp();
-                    break;
-                case "DOWN":
-                    robot.MoveDown();
-                    break;
-                case "LEFT":
-                    robot.MoveLeft();
-                    break;
-                case "RIGHT":
-                    robot.MoveRight();
-                    break;
-                default:
-                    System.out.println("Invalid move");
+        while (_currentCol != 6 || _currentRow != 6) {
+            System.out.println("Where do you want to move? (UP, DOWN, LEFT, RIGHT)");
+            String move = sc.next();
+            if (_currentCol != 6 || _currentRow != 6) {
+                switch (move) {
+                    case "UP":
+                        robot.MoveUp();
+                        robot.GetMove();
+                        break;
+                    case "DOWN":
+                        robot.MoveDown();
+                        robot.GetMove();
+                        break;
+                    case "LEFT":
+                        robot.MoveLeft();
+                        robot.GetMove();
+                        break;
+                    case "RIGHT":
+                        robot.MoveRight();
+                        robot.GetMove();
+                        break;
+                    default:
+                        System.out.println("Invalid move");
+                }
             }
+            System.out.println("New position: " + robot.GetCol() + " " + robot.GetRow());
         }
         System.out.println("New position: " + robot.GetCol() + " " + robot.GetRow());
     }

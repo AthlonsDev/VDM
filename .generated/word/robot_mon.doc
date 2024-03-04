@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>robot_mon.vdmsl</title>
+<style>
+<!--
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+{margin:0in; margin-bottom:.0001pt; font-size:12.0pt; font-family:"Times New Roman";}
+h1
+{margin-top:12.0pt; margin-right:0in; margin-bottom:3.0pt; margin-left:0in; page-break-after:avoid; font-size:16.0pt; font-family:Arial;}
+@page Section1
+{size:8.5in 11.0in; margin:1.0in 1.25in 1.0in 1.25in;}
+div.Section1
+{page:Section1;}
+-->
+</style>
+</head>
+<body lang=EN-GB>
+<div class=Section1>
+<h1 align=center style='text-align:center'>robot_mon.vdmsl</h1>
+<p class=MsoNormal>&nbsp;</p>
+<p class=MsoNormal>&nbsp;</p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>types</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move&nbsp;=&nbsp;&lt;LEFT&gt;|&nbsp;&lt;RIGHT&gt;|&nbsp;&lt;UP&gt;|&nbsp;&lt;DOWN&gt;;</span></p>
+<p class=MsoNormal>&nbsp;</p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>values</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MAX&nbsp;:&nbsp;int&nbsp;=&nbsp;6;</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MIN&nbsp;:&nbsp;int&nbsp;=&nbsp;1;</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;currentRow&nbsp;:&nbsp;int&nbsp;=&nbsp;1;</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;currentCol&nbsp;:&nbsp;int&nbsp;=&nbsp;1;</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;previousMove&nbsp;:&nbsp;Move&nbsp;=&nbsp;&lt;LEFT&gt;;</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;currentMove&nbsp;:&nbsp;Move&nbsp;=&nbsp;&lt;LEFT&gt;;</span></p>
+<p class=MsoNormal>&nbsp;</p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>state&nbsp;RobotMonitor&nbsp;of</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;col&nbsp;:&nbsp;int</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;row&nbsp;:&nbsp;int</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>inv&nbsp;mk_RobotMonitor(c,&nbsp;r)&nbsp;==&nbsp;r&nbsp;&gt;&nbsp;MIN&nbsp;and&nbsp;r&nbsp;&lt;&nbsp;MAX&nbsp;or&nbsp;c&nbsp;&gt;&nbsp;MIN&nbsp;and&nbsp;c&nbsp;&lt;&nbsp;MAX</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>init&nbsp;RM&nbsp;==&nbsp;RM&nbsp;=&nbsp;mk_RobotMonitor(4,&nbsp;3)</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>end</span></p>
+<p class=MsoNormal>&nbsp;</p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>operations</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;MoveRight()</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;pre&nbsp;(previousMove&nbsp;&lt;&gt;&nbsp;&lt;RIGHT&gt;&nbsp;and&nbsp;col&nbsp;&gt;&nbsp;MIN)&nbsp;and&nbsp;col&nbsp;&lt;&nbsp;MAX</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;post&nbsp;currentCol&nbsp;=&nbsp;col~&nbsp;+&nbsp;col&nbsp;and&nbsp;currentMove&nbsp;=&nbsp;&lt;RIGHT&gt;;</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;MoveLeft()</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;ext&nbsp;wr&nbsp;col:int</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;pre&nbsp;(currentMove&nbsp;&lt;&gt;&nbsp;&lt;LEFT&gt;&nbsp;and&nbsp;col&nbsp;&gt;&nbsp;MIN)&nbsp;and&nbsp;col&nbsp;&lt;&nbsp;MAX</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;post&nbsp;currentCol&nbsp;=&nbsp;col~&nbsp;-&nbsp;col&nbsp;and&nbsp;currentMove&nbsp;=&nbsp;&lt;LEFT&gt;;</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;MoveDown()</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;ext&nbsp;wr&nbsp;row:int</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;pre&nbsp;(currentMove&nbsp;&lt;&gt;&nbsp;&lt;DOWN&gt;&nbsp;and&nbsp;row&nbsp;&gt;&nbsp;MIN)&nbsp;and&nbsp;row&nbsp;&lt;&nbsp;MAX</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;post&nbsp;currentRow&nbsp;=&nbsp;row~&nbsp;-&nbsp;row&nbsp;and&nbsp;currentMove&nbsp;=&nbsp;&lt;DOWN&gt;;</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;MoveUp()</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;ext&nbsp;wr&nbsp;row:int</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;pre&nbsp;(currentMove&nbsp;&lt;&gt;&nbsp;&lt;UP&gt;&nbsp;and&nbsp;row&nbsp;&gt;&nbsp;MIN)&nbsp;and&nbsp;row&nbsp;&lt;&nbsp;MAX</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;post&nbsp;currentRow&nbsp;=&nbsp;row~&nbsp;+&nbsp;row&nbsp;and&nbsp;currentMove&nbsp;=&nbsp;&lt;UP&gt;;</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;GetRow()</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;ext&nbsp;rd&nbsp;row:int</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;pre&nbsp;true</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;post&nbsp;currentRow&nbsp;=&nbsp;row;</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;GetCol()</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;ext&nbsp;rd&nbsp;col:int</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;pre&nbsp;true</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;post&nbsp;currentCol&nbsp;=&nbsp;col;</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;GetMove()</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;pre&nbsp;true</span></p>
+<p class=MsoNormal style='text-autospace:none'><span style='font-size:10.0pt; font-family:"Courier New"; color:black'>&nbsp;&nbsp;&nbsp;&nbsp;post&nbsp;previousMove&nbsp;=&nbsp;currentMove;</span></p>
+</div>
+</body>
+</html>
