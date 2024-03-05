@@ -24,7 +24,7 @@ public class RobotMonitor {
 
     // Functions
     private void MoveRight() {
-        if (previousMove != Move.RIGHT || previousMove != Move.NOMOVE && currentCol <= MAX && currentCol >= MIN) {
+        if (previousMove != Move.RIGHT && currentCol <= MAX && currentCol >= MIN) {
             currentCol++;
             currentMove = Move.RIGHT;
         } else {
@@ -69,7 +69,7 @@ public class RobotMonitor {
 
     private Move GetMove() {
         previousMove = currentMove;
-        return currentMove;
+        return previousMove;
     }
 
     public static void main(String[] args) {
@@ -78,7 +78,7 @@ public class RobotMonitor {
         int _currentRow = 1;
         RobotMonitor robot = new RobotMonitor(1, 1);
         System.out.println("Initial position: " + robot.GetCol() + " " + robot.GetRow());
-        while (_currentCol != 6 || _currentRow != 6) {
+        while (_currentCol != 6 && _currentRow != 6) {
             System.out.println("Where do you want to move? (UP, DOWN, LEFT, RIGHT)");
             String move = sc.next();
             if (_currentCol != 6 || _currentRow != 6) {

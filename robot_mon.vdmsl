@@ -1,37 +1,40 @@
 types
-     Move = <LEFT>| <RIGHT>| <UP>| <DOWN>| <NOMOVE>;
+     Move = <LEFT>| <RIGHT>| <UP>| <DOWN>| <nil>;
 
 values
      MAX : int = 6;
      MIN : int = 1;
      currentRow : int = 1;
      currentCol : int = 1;
-     previousMove : Move = <NOMOVE>;
-     currentMove : Move = <NOMOVE>;
+     previousMove : Move = <nil>;
+     currentMove : Move = <nil>;
 
 state RobotMonitor of
     col : int
     row : int
-inv mk_RobotMonitor(c, r) == r >= MIN and r <= MAX or c >= MIN and c <= MAX
-init RM == RM = mk_RobotMonitor(1, 1)
+    move : [Move]
+inv mk_RobotMonitor(c, r, m) ==
+    r >= MIN and r <= MAX or c >= MIN and c <= MAX
+init RM == RM = mk_RobotMonitor(1, 1, <nil>)
 end
 
 operations
     MoveRight()
-    pre previousMove <> <RIGHT>  and col > MIN and col < MAX
+    pre (previousMove <> <RIGHT> and col > MIN) and col < MAX
     post currentCol = col~ + col and currentMove = <RIGHT>;
     
     MoveLeft()
-    pre currentMove <> <LEFT> and previousMove <> <NOMOVE> and col > MIN and col < MAX
+    pre ((currentMove <> <LEFT> and previousMove <> <nil>) and col > MIN)
+    and col < MAX
     post currentCol = col~ - col and currentMove = <LEFT>;
     
     MoveDown()
-    pre currentMove <> <DOWN> and row > MIN and row < MAX
-    post currentRow = row~ - row and currentMove = <DOWN>;
+    pre (currentMove <> <DOWN> and row > MIN) and row < MAX
+    post currentRow = row~ + row and currentMove = <DOWN>;
     
     MoveUp()
-    pre currentMove <> <UP> or previousMove <> <NOMOVE> and row > MIN and row < MAX
-    post currentRow = row~ + row and currentMove = <UP>;
+    pre currentMove <> <UP> or (previousMove <> <nil> and row > MIN) and row < MAX
+    post currentRow = row~ - row and currentMove = <UP>;
     
     GetRow()
     ext rd row:int
