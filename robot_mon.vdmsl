@@ -14,7 +14,10 @@ state RobotMonitor of
     row : int
     move : [Move]
 inv mk_RobotMonitor(c, r, m) ==
-    r >= MIN and r <= MAX or c >= MIN and c <= MAX
+    (((r >= MIN and r <= MAX or (c >= MIN and c <= MAX) and m = <LEFT>)
+            or m = <RIGHT>)
+        or m = <UP>)
+    or m = <DOWN>
 init RM == RM = mk_RobotMonitor(1, 1, <nil>)
 end
 
