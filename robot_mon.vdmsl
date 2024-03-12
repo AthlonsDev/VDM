@@ -23,19 +23,23 @@ end
 
 operations
     MoveRight()
+    ext wr col:int
     pre (previousMove <> <RIGHT> and col > MIN) and col < MAX
     post currentCol = col~ + col and currentMove = <RIGHT>;
     
     MoveLeft()
+    ext wr col:int
     pre ((currentMove <> <LEFT> and previousMove <> <nil>) and col > MIN)
     and col < MAX
     post currentCol = col~ - col and currentMove = <LEFT>;
     
     MoveDown()
+    ext wr row:int
     pre (currentMove <> <DOWN> and row > MIN) and row < MAX
     post currentRow = row~ + row and currentMove = <DOWN>;
     
     MoveUp()
+    ext wr row:int
     pre currentMove <> <UP> or (previousMove <> <nil> and row > MIN) and row < MAX
     post currentRow = row~ - row and currentMove = <UP>;
     
