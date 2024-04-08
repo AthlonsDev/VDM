@@ -40,8 +40,8 @@ public class RobotMonitor
    	//operations
    	public int GetCol()
 	{
-			col = currentCol;
-			return col;
+		col = currentCol;
+		return col;
 	}
 	
 	public int GetRow()

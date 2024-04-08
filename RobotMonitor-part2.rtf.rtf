@@ -140,63 +140,63 @@ VDM;}{\*\cs16 \additive \rtlch\fcs1 \af0 \ltrch\fcs0 \f5\chshdng2000\chcfpat0\ch
 \hich\af1\dbch\af31505\loch\f1 template}{\rtlch\fcs1 \af1 \ltrch\fcs0 \b\insrsid10452472 \hich\af1\dbch\af31505\loch\f1 )}{\rtlch\fcs1 \af1 \ltrch\fcs0 \b\insrsid8202384 
 \par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \b\insrsid3548230 
 \par }\pard\plain \ltrpar\s15\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid1270115 \shading2000 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \f2\fs20\lang1024\langfe1024\cgrid\noproof\langnp2057\langfenp2057 {
-\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid1270115\charrsid1270115 types
-\par      Move = <LEFT>| <RIGHT>| <UP>| <DOWN>;
+\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid1270115\charrsid1270115 {\b types}
+\par      {\i \'4d\'6f\'76\'65} = <\'3c\'4c\'45\'46\'54\'3e>| <\'3c\'52\'49\'47\'48\'54\'3e>| <\'3c\'55\'50\'3e>| <\'3c\'44\'4f\'57\'4e\'3e>;
 \par 
-\par values
-\par      MAX : int = 6;
-\par      MIN : int = 1;
-\par      currentRow : int = 1;
-\par      currentCol : int = 1;
-\par      currentMove : [Move] = nil;
+\par {\b values}
+\par      {\i \'4d\'41\'58} : {\b int} = \'36;
+\par      {\i \'4d\'49\'4e} : {\b int} = \'31;
+\par      {\i \'63\'75\'72\'72\'65\'6e\'74\'52\'6f\'77} : {\b int} = \'31;
+\par      {\i \'63\'75\'72\'72\'65\'6e\'74\'43\'6f\'6c} : {\b int} = \'31;
+\par      {\i \'63\'75\'72\'72\'65\'6e\'74\'4d\'6f\'76\'65} : [{\i \'4d\'6f\'76\'65}] = {\b nil};
 \par 
-\par state RobotMonitor of
-\par     col : int
-\par     row : int
-\par     move : [Move]
-\par inv mk_RobotMonitor(c, r, m) ==
-\par     (((r >= MIN and r <= MAX or (c >= MIN and c <= MAX) and m = <LEFT>)
-\par             or m = <RIGHT>)
-\par         or m = <UP>)
-\par     or m = <DOWN>
-\par init RM == RM = mk_RobotMonitor(1, 1, nil)
-\par end
+\par {\b state} {\i \'52\'6f\'62\'6f\'74\'4d\'6f\'6e\'69\'74\'6f\'72} {\b of}
+\par     {\i \'63\'6f\'6c} : {\b int}
+\par     {\i \'72\'6f\'77} : {\b int}
+\par     {\i \'6d\'6f\'76\'65} : [{\i \'4d\'6f\'76\'65}]
+\par {\b inv} {\b mk_}{\i \'52\'6f\'62\'6f\'74\'4d\'6f\'6e\'69\'74\'6f\'72}({\i \'63}, {\i \'72}, {\i \'6d}) ==
+\par     ((({\i \'72} >= {\i \'4d\'49\'4e} {\b and} {\i \'72} <= {\i \'4d\'41\'58} {\b or} ({\i \'63} >= {\i \'4d\'49\'4e} {\b and} {\i \'63} <= {\i \'4d\'41\'58}) {\b and} {\i \'6d} = <\'3c\'4c\'45\'46\'54\'3e>)
+\par             {\b or} {\i \'6d} = <\'3c\'52\'49\'47\'48\'54\'3e>)
+\par         {\b or} {\i \'6d} = <\'3c\'55\'50\'3e>)
+\par     {\b or} {\i \'6d} = <\'3c\'44\'4f\'57\'4e\'3e>
+\par {\b init} {\i \'52\'4d} == {\i \'52\'4d} = {\b mk_}{\i \'52\'6f\'62\'6f\'74\'4d\'6f\'6e\'69\'74\'6f\'72}(\'31, \'31, {\b nil})
+\par {\b end}
 \par 
-\par operations
-\par     MoveRight()
-\par     ext wr col:int
-\par     pre (currentMove <> <RIGHT> and col > MIN) and col < MAX
-\par     post currentCol = col~ + col and currentMove = <RIGHT>;
-\par     
-\par     MoveLeft()
-\par     ext wr col:int
-\par     pre ((currentMove <> <LEFT> and currentMove <> nil) and col > MIN)
-\par     and col < MAX
-\par     post currentCol = col~ - col and currentMove = <LEFT>;
-\par     
-\par     MoveDown()
-\par     ext wr row:int
-\par     pre (currentMove <> <DOWN> and row > MIN) and row < MAX
-\par     post currentRow = row~ + row and currentMove = <DOWN>;
-\par     
-\par     MoveUp()
-\par     ext wr row:int
-\par     pre currentMove <> <UP> or (currentMove <> nil and row > MIN) and row < MAX
-\par     post currentRow = row~ - row and currentMove = <UP>;
-\par     
-\par     GetRow()
-\par     ext rd row:int
-\par     pre true
-\par     post currentRow = row;
-\par     
-\par     GetCol()
-\par     ext rd col:int
-\par     pre true
-\par     post currentCol = col;
-\par     
-\par     GetMove()
-\par     pre true
-\par     post currentMove = currentMove;}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid8202384 
+\par {\b operations}
+\par     {\i \'4d\'6f\'76\'65\'52\'69\'67\'68\'74}()
+\par     {\b ext} {\b wr} {\i \'63\'6f\'6c}:{\b int}
+\par     {\b pre} ({\i \'63\'75\'72\'72\'65\'6e\'74\'4d\'6f\'76\'65} <> <\'3c\'52\'49\'47\'48\'54\'3e> {\b and} {\i \'63\'6f\'6c} > {\i \'4d\'49\'4e}) {\b and} {\i \'63\'6f\'6c} < {\i \'4d\'41\'58}
+\par     {\b post} {\i \'63\'75\'72\'72\'65\'6e\'74\'43\'6f\'6c} = {\i \'63\'6f\'6c}~ + {\i \'63\'6f\'6c} {\b and} {\i \'63\'75\'72\'72\'65\'6e\'74\'4d\'6f\'76\'65} = <\'3c\'52\'49\'47\'48\'54\'3e>;
+\par 
+\par     {\i \'4d\'6f\'76\'65\'4c\'65\'66\'74}()
+\par     {\b ext} {\b wr} {\i \'63\'6f\'6c}:{\b int}
+\par     {\b pre} (({\i \'63\'75\'72\'72\'65\'6e\'74\'4d\'6f\'76\'65} <> <\'3c\'4c\'45\'46\'54\'3e> {\b and} {\i \'63\'75\'72\'72\'65\'6e\'74\'4d\'6f\'76\'65} <> {\b nil}) {\b and} {\i \'63\'6f\'6c} > {\i \'4d\'49\'4e})
+\par     {\b and} {\i \'63\'6f\'6c} < {\i \'4d\'41\'58}
+\par     {\b post} {\i \'63\'75\'72\'72\'65\'6e\'74\'43\'6f\'6c} = {\i \'63\'6f\'6c}~ - {\i \'63\'6f\'6c} {\b and} {\i \'63\'75\'72\'72\'65\'6e\'74\'4d\'6f\'76\'65} = <\'3c\'4c\'45\'46\'54\'3e>;
+\par 
+\par     {\i \'4d\'6f\'76\'65\'44\'6f\'77\'6e}()
+\par     {\b ext} {\b wr} {\i \'72\'6f\'77}:{\b int}
+\par     {\b pre} ({\i \'63\'75\'72\'72\'65\'6e\'74\'4d\'6f\'76\'65} <> <\'3c\'44\'4f\'57\'4e\'3e> {\b and} {\i \'72\'6f\'77} > {\i \'4d\'49\'4e}) {\b and} {\i \'72\'6f\'77} < {\i \'4d\'41\'58}
+\par     {\b post} {\i \'63\'75\'72\'72\'65\'6e\'74\'52\'6f\'77} = {\i \'72\'6f\'77}~ + {\i \'72\'6f\'77} {\b and} {\i \'63\'75\'72\'72\'65\'6e\'74\'4d\'6f\'76\'65} = <\'3c\'44\'4f\'57\'4e\'3e>;
+\par 
+\par     {\i \'4d\'6f\'76\'65\'55\'70}()
+\par     {\b ext} {\b wr} {\i \'72\'6f\'77}:{\b int}
+\par     {\b pre} {\i \'63\'75\'72\'72\'65\'6e\'74\'4d\'6f\'76\'65} <> <\'3c\'55\'50\'3e> {\b or} ({\i \'63\'75\'72\'72\'65\'6e\'74\'4d\'6f\'76\'65} <> {\b nil} {\b and} {\i \'72\'6f\'77} > {\i \'4d\'49\'4e}) {\b and} {\i \'72\'6f\'77} < {\i \'4d\'41\'58}
+\par     {\b post} {\i \'63\'75\'72\'72\'65\'6e\'74\'52\'6f\'77} = {\i \'72\'6f\'77}~ - {\i \'72\'6f\'77} {\b and} {\i \'63\'75\'72\'72\'65\'6e\'74\'4d\'6f\'76\'65} = <\'3c\'55\'50\'3e>;
+\par 
+\par     {\i \'47\'65\'74\'52\'6f\'77}()
+\par     {\b ext} {\b rd} {\i \'72\'6f\'77}:{\b int}
+\par     {\b pre} {\b true}
+\par     {\b post} {\i \'63\'75\'72\'72\'65\'6e\'74\'52\'6f\'77} = {\i \'72\'6f\'77};
+\par 
+\par     {\i \'47\'65\'74\'43\'6f\'6c}()
+\par     {\b ext} {\b rd} {\i \'63\'6f\'6c}:{\b int}
+\par     {\b pre} {\b true}
+\par     {\b post} {\i \'63\'75\'72\'72\'65\'6e\'74\'43\'6f\'6c} = {\i \'63\'6f\'6c};
+\par 
+\par     {\i \'47\'65\'74\'4d\'6f\'76\'65}()
+\par     {\b pre} {\b true}
+\par     {\b post} {\i \'63\'75\'72\'72\'65\'6e\'74\'4d\'6f\'76\'65} = {\i \'63\'75\'72\'72\'65\'6e\'74\'4d\'6f\'76\'65};
 \par }{\*\themedata 504b030414000600080000002100e9de0fbfff0000001c020000130000005b436f6e74656e745f54797065735d2e786d6cac91cb4ec3301045f748fc83e52d4a
 9cb2400825e982c78ec7a27cc0c8992416c9d8b2a755fbf74cd25442a820166c2cd933f79e3be372bd1f07b5c3989ca74aaff2422b24eb1b475da5df374fd9ad
 5689811a183c61a50f98f4babebc2837878049899a52a57be670674cb23d8e90721f90a4d2fa3802cb35762680fd800ecd7551dc18eb899138e3c943d7e503b6

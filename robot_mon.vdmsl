@@ -6,7 +6,6 @@ values
      MIN : int = 1;
      currentRow : int = 1;
      currentCol : int = 1;
-     previousMove : [Move] = nil;
      currentMove : [Move] = nil;
 
 state RobotMonitor of
@@ -24,12 +23,12 @@ end
 operations
     MoveRight()
     ext wr col:int
-    pre (previousMove <> <RIGHT> and col > MIN) and col < MAX
+    pre (currentMove <> <RIGHT> and col > MIN) and col < MAX
     post currentCol = col~ + col and currentMove = <RIGHT>;
     
     MoveLeft()
     ext wr col:int
-    pre ((currentMove <> <LEFT> and previousMove <> nil) and col > MIN)
+    pre ((currentMove <> <LEFT> and currentMove <> nil) and col > MIN)
     and col < MAX
     post currentCol = col~ - col and currentMove = <LEFT>;
     
@@ -40,7 +39,7 @@ operations
     
     MoveUp()
     ext wr row:int
-    pre currentMove <> <UP> or (previousMove <> nil and row > MIN) and row < MAX
+    pre currentMove <> <UP> or (currentMove <> nil and row > MIN) and row < MAX
     post currentRow = row~ - row and currentMove = <UP>;
     
     GetRow()
@@ -55,4 +54,4 @@ operations
     
     GetMove()
     pre true
-    post previousMove = currentMove;
+    post currentMove = currentMove;
