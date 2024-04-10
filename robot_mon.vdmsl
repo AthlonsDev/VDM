@@ -22,13 +22,13 @@ end
 
 operations
     MoveRight()
-    ext wr col:int
+    ext wr move:[Move] and col:int
     pre (currentMove <> <RIGHT> and col > MIN) and col < MAX
-    post currentCol = col~ + col and currentMove = <RIGHT>;
+    post currentCol = col~ + col and move = <RIGHT>;
     
     MoveLeft()
     ext wr col:int
-    pre ((currentMove <> <LEFT> and currentMove <> nil) and col > MIN)
+    pre currentMove <> <LEFT> and (currentMove <> nil and col > MIN)
     and col < MAX
     post currentCol = col~ - col and currentMove = <LEFT>;
     
@@ -53,5 +53,6 @@ operations
     post currentCol = col;
     
     GetMove()
+    ext rd move:[Move]
     pre true
-    post currentMove = currentMove;
+    post move = currentMove;

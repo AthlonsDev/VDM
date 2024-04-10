@@ -36,7 +36,7 @@
 \red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;
 \red192\green192\blue192;\red0\green0\blue0;\red0\green0\blue0;}{\*\defchp }{\*\defpap \ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 }\noqfpromote {\stylesheet{
 \ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang1033\langfe1033\loch\f1\hich\af1\dbch\af31505\cgrid\langnp1033\langfenp1033 
-\snext0 \sqformat \spriority0 \styrsid8202384 Normal;}{\*\cs10 \additive \sunhideused \spriority1 Default Paragraph Font;}{\*
+\snext0 \sqformat \spriority0 \styrsid8202384 Normal;}{\*\cs10 \additive \ssemihidden \sunhideused \spriority1 Default Paragraph Font;}{\*
 \ts11\tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpaddfl3\trpaddft3\trpaddfb3\trpaddfr3\trcbpat1\trcfpat1\tblind0\tblindtype3\tsvertalt\tsbrdrt\tsbrdrl\tsbrdrb\tsbrdrr\tsbrdrdgl\tsbrdrdgr\tsbrdrh\tsbrdrv 
 \ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang2057\langfe2057\cgrid\langnp2057\langfenp2057 \snext11 \ssemihidden \sunhideused Normal Table;}{
 \s15\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \shading2000 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \f2\fs20\lang1024\langfe1024\cgrid\noproof\langnp2057\langfenp2057 \snext15 \spriority0 \styrsid4006206 
@@ -120,19 +120,19 @@ VDM;}{\*\cs16 \additive \rtlch\fcs1 \af0 \ltrch\fcs0 \f5\chshdng2000\chcfpat0\ch
 \sa0}{\pgp\ipgp16\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp16\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp16\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp16\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp16\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp16\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp16\itap0\li0\ri0\sb0\sa0}{\pgp
 \ipgp16\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp16\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp16\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp16\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp16\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp16\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp16\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp16
 \itap0\li0\ri0\sb0\sa0}{\pgp\ipgp16\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp16\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp16\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp16\itap0\li0\ri0\sb0\sa0}}{\*\rsidtbl \rsid341405\rsid399196\rsid611704\rsid983803\rsid1270115\rsid1397673
-\rsid1400107\rsid2503381\rsid2563389\rsid2764672\rsid2831821\rsid2850374\rsid3027310\rsid3043612\rsid3146889\rsid3174544\rsid3548230\rsid3736655\rsid3829631\rsid3894500\rsid4006206\rsid4282595\rsid4419610\rsid4659864\rsid4664429\rsid4931884\rsid4990277
-\rsid5007197\rsid5055645\rsid5061332\rsid5263167\rsid5315192\rsid5321193\rsid5400703\rsid5585669\rsid5798296\rsid5849011\rsid6123082\rsid6248715\rsid6252567\rsid6358708\rsid6360609\rsid6492348\rsid6520203\rsid6568098\rsid6696970\rsid6899427\rsid7021836
-\rsid7366579\rsid7615253\rsid7698616\rsid7892352\rsid7893088\rsid8131148\rsid8150370\rsid8202384\rsid8463274\rsid8529292\rsid8533198\rsid8533229\rsid8853534\rsid8933940\rsid8988402\rsid9134606\rsid9376576\rsid9508055\rsid9522915\rsid9591995\rsid9644528
-\rsid9837615\rsid9971094\rsid10116193\rsid10302353\rsid10316161\rsid10318297\rsid10425108\rsid10452472\rsid10622047\rsid10906895\rsid11027696\rsid11171919\rsid11486378\rsid12001981\rsid12134460\rsid12152524\rsid12153505\rsid12347026\rsid12403718
-\rsid12405507\rsid12789887\rsid12937044\rsid12996591\rsid13004562\rsid13248226\rsid13305825\rsid13505969\rsid13570294\rsid14375641\rsid14577154\rsid14770770\rsid14821453\rsid15034260\rsid15141063\rsid15146487\rsid15466803\rsid15498168\rsid15535651
-\rsid15607369\rsid15800186\rsid15938281\rsid16062750\rsid16194412\rsid16210505\rsid16457399}{\mmathPr\mmathFont34\mbrkBin0\mbrkBinSub0\msmallFrac0\mdispDef1\mlMargin0\mrMargin0\mdefJc1\mwrapIndent1440\mintLim0\mnaryLim1}{\info{\author Aaron}
-{\operator Andrea SANNA}{\creatim\yr2024\mo2\dy24\hr12\min3}{\revtim\yr2024\mo4\dy10\hr19\min37}{\version29}{\edmins154}{\nofpages2}{\nofwords281}{\nofchars1111}{\*\company IFAD}{\nofcharsws1315}{\vern93}}{\*\userprops {\propname GrammarlyDocumentId}
-\proptype30{\staticval 719e9ab8b6915130817e937367c8afa9d2ea7f5e2582d3e16041359f3dcd760a}}{\*\xmlnstbl {\xmlns1 http://schemas.microsoft.com/office/word/2003/wordml}}\paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect 
+\rsid1400107\rsid2503381\rsid2563389\rsid2764672\rsid2850374\rsid3027310\rsid3043612\rsid3146889\rsid3174544\rsid3548230\rsid3736655\rsid3829631\rsid3894500\rsid4006206\rsid4282595\rsid4659864\rsid4664429\rsid4931884\rsid5007197\rsid5055645\rsid5061332
+\rsid5263167\rsid5321193\rsid5400703\rsid5585669\rsid5849011\rsid6123082\rsid6248715\rsid6252567\rsid6358708\rsid6360609\rsid6492348\rsid6520203\rsid6568098\rsid6696970\rsid6899427\rsid7021836\rsid7366579\rsid7615253\rsid7698616\rsid7892352\rsid8131148
+\rsid8150370\rsid8202384\rsid8463274\rsid8529292\rsid8533198\rsid8533229\rsid8853534\rsid8933940\rsid9134606\rsid9376576\rsid9508055\rsid9522915\rsid9591995\rsid9644528\rsid9837615\rsid9971094\rsid10116193\rsid10302353\rsid10316161\rsid10318297
+\rsid10425108\rsid10452472\rsid10622047\rsid11027696\rsid11486378\rsid11867172\rsid12001981\rsid12134460\rsid12152524\rsid12153505\rsid12347026\rsid12405507\rsid12789887\rsid12996591\rsid13248226\rsid13305825\rsid13505969\rsid13570294\rsid14375641
+\rsid14577154\rsid14770770\rsid14821453\rsid15034260\rsid15141063\rsid15146487\rsid15466803\rsid15498168\rsid15535651\rsid15607369\rsid15800186\rsid15938281\rsid16062750\rsid16194412\rsid16210505\rsid16457399}{\mmathPr\mmathFont34\mbrkBin0\mbrkBinSub0
+\msmallFrac0\mdispDef1\mlMargin0\mrMargin0\mdefJc1\mwrapIndent1440\mintLim0\mnaryLim1}{\info{\author Aaron}{\operator Andrea SANNA}{\creatim\yr2024\mo2\dy24\hr12\min3}{\revtim\yr2024\mo4\dy10\hr15\min17}{\version19}{\edmins64}{\nofpages2}{\nofwords268}
+{\nofchars1103}{\*\company IFAD}{\nofcharsws1303}{\vern93}}{\*\userprops {\propname GrammarlyDocumentId}\proptype30{\staticval 719e9ab8b6915130817e937367c8afa9d2ea7f5e2582d3e16041359f3dcd760a}}{\*\xmlnstbl {\xmlns1 http://schemas.microsoft.com/office/word
+/2003/wordml}}\paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect 
 \widowctrl\ftnbj\aenddoc\trackmoves0\trackformatting1\donotembedsysfont1\relyonvml0\donotembedlingdata0\grfdocevents0\validatexml1\showplaceholdtext0\ignoremixedcontent0\saveinvalidxml0\showxmlerrors1\noxlattoyen
 \expshrtn\noultrlspc\dntblnsbdb\nospaceforul\formshade\horzdoc\dghspace180\dgvspace180\dghorigin1701\dgvorigin1984\dghshow0\dgvshow0
 \jexpand\viewkind1\viewscale100\pgbrdrhead\pgbrdrfoot\splytwnine\ftnlytwnine\htmautsp\nolnhtadjtbl\useltbaln\alntblind\lytcalctblwd\lyttblrtgr\lnbrkrule\nobrkwrptbl\snaptogridincell\allowfieldendsel\wrppunct
 \asianbrkrule\nojkernpunct\rsidroot8202384\newtblstyruls\nogrowautofit\usenormstyforlist\noindnmbrts\felnbrelev\nocxsptable\indrlsweleven\noafcnsttbl\afelev\utinl\hwelev\spltpgpar\notcvasp\notbrkcnstfrctbl\notvatxbx\krnprsnet\cachedcolbal 
-\nouicompat \fet0{\*\wgrffmtfilter 2450}\nofeaturethrottle1\ilfomacatclnup0{\*\template C:\\Program Files\\Microsoft Office\\Templates\\1033\\VDM.dotx}\ltrpar \sectd \ltrsect\linex0\endnhere\sectdefaultcl\sectrsid13004562\sftnbj {\*\pnseclvl1
+\nouicompat \fet0{\*\wgrffmtfilter 2450}\nofeaturethrottle1\ilfomacatclnup0{\*\template C:\\Program Files\\Microsoft Office\\Templates\\1033\\VDM.dotx}\ltrpar \sectd \ltrsect\linex0\endnhere\sectdefaultcl\sectrsid11867172\sftnbj {\*\pnseclvl1
 \pnucrm\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang {\pntxta )}}{\*\pnseclvl5
 \pndec\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang 
 {\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}\pard\plain \ltrpar\qj \li0\ri0\sl360\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid8202384 \rtlch\fcs1 
@@ -140,8 +140,8 @@ VDM;}{\*\cs16 \additive \rtlch\fcs1 \af0 \ltrch\fcs0 \f5\chshdng2000\chcfpat0\ch
 \b\insrsid8853534\charrsid8853534 \hich\af1\dbch\af31505\loch\f1  Monitor VDM-SL Specification}{\rtlch\fcs1 \af1 \ltrch\fcs0 \b\insrsid15141063 \hich\af1\dbch\af31505\loch\f1  (}{\rtlch\fcs1 \af1 \ltrch\fcs0 \b\insrsid8933940 
 \hich\af1\dbch\af31505\loch\f1 template}{\rtlch\fcs1 \af1 \ltrch\fcs0 \b\insrsid10452472 \hich\af1\dbch\af31505\loch\f1 )}{\rtlch\fcs1 \af1 \ltrch\fcs0 \b\insrsid8202384 
 \par }{\rtlch\fcs1 \af1 \ltrch\fcs0 \b\insrsid3548230 
-\par }\pard\plain \ltrpar\s15\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid4990277 \shading2000 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \f2\fs20\lang1024\langfe1024\cgrid\noproof\langnp2057\langfenp2057 {
-\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid4990277\charrsid4990277 types
+\par }\pard\plain \ltrpar\s15\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid12001981 \shading2000 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \f2\fs20\lang1024\langfe1024\cgrid\noproof\langnp2057\langfenp2057 {
+\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid12001981\charrsid12001981 types
 \par      Move = <LEFT>| <RIGHT>| <UP>| <DOWN>;
 \par 
 \par values
@@ -165,34 +165,28 @@ VDM;}{\*\cs16 \additive \rtlch\fcs1 \af0 \ltrch\fcs0 \f5\chshdng2000\chcfpat0\ch
 \par 
 \par operations
 \par     MoveRight()
-\par     ext wr col:int}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid12937044 
-\par }\pard \ltrpar\s15\ql \fi720\li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid2831821 \shading2000 {\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid7893088 wr move:}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid2831821 [}{
-\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid7893088 Mov}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid12403718 e}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid2831821 ]}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid4990277\charrsid4990277 
-\par }\pard \ltrpar\s15\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid4990277 \shading2000 {\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid4990277\charrsid4990277     pre (}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid11171919 
-move}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid4990277\charrsid4990277  <> <RIGHT> and col > MIN) and col < MAX
-\par     post currentCol = col~ + col and move = <RIGHT>;
+\par     ext wr col:int
+\par     pre (currentMove <> <RIGHT> and col > MIN) and col < MAX
+\par     post currentCol = col~ + col and currentMove = <RIGHT>;
 \par     
-\par     MoveLeft()
-\par     ext wr col:int}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid4990277 
-\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid2831821 \tab wr move:[Move]}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid2831821\charrsid4990277 
-\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid4990277\charrsid4990277     pre }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid11171919 move}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid11171919\charrsid4990277  }{\rtlch\fcs1 \af0 \ltrch\fcs0 
-\b\insrsid4990277\charrsid4990277 <> <LEFT> and}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid11171919  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid4990277\charrsid4990277 col > MIN
-\par     and col < MAX
-\par     post currentCol = col~ - col and }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid11171919 move}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid11171919\charrsid4990277  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid4990277\charrsid4990277 = <LEFT>;
-\par     
+\par }\pard \ltrpar\s15\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid10316161 \shading2000 {\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid10316161\charrsid12001981     Move}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\b\insrsid10316161 Left}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid10316161\charrsid12001981 ()
+\par     ext wr }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid10316161 col}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid10316161\charrsid12001981 :int
+\par     pre currentMove }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid6358708 =}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid10316161\charrsid12001981  <}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid10316161 LEFT}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\b\insrsid10316161\charrsid12001981 > and }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid10316161 col}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid10316161\charrsid12001981  > MIN and }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid10316161 col}{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \b\insrsid10316161\charrsid12001981  < MAX
+\par     post currentRow = }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid10316161 col}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid10316161\charrsid12001981 ~ - }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid10316161 col}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\b\insrsid10316161\charrsid12001981  and currentMove = <}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid10316161 LEFT}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid10316161\charrsid12001981 >;
+\par }\pard \ltrpar\s15\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid12001981 \shading2000 {\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid12001981\charrsid12001981     
 \par     MoveDown()
-\par     ext wr row:int}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid4990277 
-\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid2831821 \tab }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid2831821 wr move:[Move]}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid2831821\charrsid4990277 
-\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid4990277\charrsid4990277     pre (}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid11171919 move}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid11171919\charrsid4990277  }{\rtlch\fcs1 \af0 \ltrch\fcs0 
-\b\insrsid4990277\charrsid4990277 <> <DOWN> and row > MIN) and row < MAX
-\par     post currentRow = row~ + row and }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid11171919 move}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid11171919\charrsid4990277  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid4990277\charrsid4990277 = <DOWN>;
+\par     ext wr row:int
+\par     pre (currentMove <> <DOWN> and row > MIN) and row < MAX
+\par     post currentRow = row~ + row and currentMove = <DOWN>;
 \par     
 \par     MoveUp()
-\par     ext wr row:int}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid4990277 
-\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid2831821 \tab }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid2831821 wr move:[Move]}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid2831821\charrsid4990277 
-\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid4990277\charrsid4990277     pre }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid11171919 move}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid11171919\charrsid4990277  }{\rtlch\fcs1 \af0 \ltrch\fcs0 
-\b\insrsid4990277\charrsid4990277 <> <UP> }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid11171919 and}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid4990277\charrsid4990277  row > MIN and row < MAX
-\par     post currentRow = row~ - row and }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid11171919 move}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid11171919\charrsid4990277  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid4990277\charrsid4990277 = <UP>;
+\par     ext wr row:int
+\par     pre currentMove <> <UP> and row > MIN and row < MAX
+\par     post currentRow = row~ - row and currentMove = <UP>;
 \par     
 \par     GetRow()
 \par     ext rd row:int
@@ -205,10 +199,8 @@ move}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid4990277\charrsid4990277  <> <RIGHT>
 \par     post currentCol = col;
 \par     
 \par     GetMove()
-\par     ext rd move:[Move]
 \par     pre true
-\par     post }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid11171919 move}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid4990277\charrsid4990277  = }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid2831821 m}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid4990277\charrsid4990277 ove;}{
-\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid8202384 
+\par     post currentMove = currentMove;}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid8202384 
 \par }{\*\themedata 504b030414000600080000002100e9de0fbfff0000001c020000130000005b436f6e74656e745f54797065735d2e786d6cac91cb4ec3301045f748fc83e52d4a
 9cb2400825e982c78ec7a27cc0c8992416c9d8b2a755fbf74cd25442a820166c2cd933f79e3be372bd1f07b5c3989ca74aaff2422b24eb1b475da5df374fd9ad
 5689811a183c61a50f98f4babebc2837878049899a52a57be670674cb23d8e90721f90a4d2fa3802cb35762680fd800ecd7551dc18eb899138e3c943d7e503b6
@@ -328,8 +320,8 @@ fffffffffffffffffdfffffffeffffffffffffffffffffffffffffffffffffffffffffffffffffff
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-ffffffffffffffffffffffffffffffff52006f006f007400200045006e00740072007900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016000500ffffffffffffffffffffffff0c6ad98892f1d411a65f0040963251e5000000000000000000000000f056
-1516768bda01feffffff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff00000000000000000000000000000000000000000000000000000000
+ffffffffffffffffffffffffffffffff52006f006f007400200045006e00740072007900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000016000500ffffffffffffffffffffffff0c6ad98892f1d411a65f0040963251e500000000000000000000000050f1
+fad7518bda01feffffff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff00000000000000000000000000000000000000000000000000000000
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000
 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffff000000000000000000000000000000000000000000000000
 0000000000000000000000000000000000000000000000000105000000000000}}
