@@ -6,12 +6,12 @@ public class RobotMonitor
    	
    	// variables
    	public static int col, row;
-	public static  Move move;
+	public static Move move;
    	
 	// attributes   
 	public static int currentCol;
 	public static int currentRow;
-	public static Move currentMove;
+	// public static Move currentMove;
    	
 	// invariant
 	public boolean inv() 
@@ -34,7 +34,7 @@ public class RobotMonitor
 		currentCol = col;
 		currentRow = row;
 		move = null;
-		currentMove = move;
+		// currentMove = move;
    	}
    
    	//operations
@@ -52,18 +52,18 @@ public class RobotMonitor
         
 	public Move GetMove()
 	{
-		move = currentMove;
+		// move = currentMove;
 		return move;
 	}
 	
    	public void MoveRight() 
    	{
 		// precondition
-		if (currentMove != Move.RIGHT && col <= MAX && col >= MIN && col != 6) 
+		if (move != Move.RIGHT && col <= MAX && col >= MIN && col != 6) 
 		{
 		// postcondition
 			currentCol++;
-			currentMove = Move.RIGHT;
+			move = Move.RIGHT;
 		} 
 		else 
 		{
@@ -77,11 +77,11 @@ public class RobotMonitor
 	public void MoveLeft() 
    	{
 		// precondition
-		if (col <= MAX && col >= MIN && currentMove != Move.LEFT && currentMove != null && col != 1) 
+		if (col <= MAX && col >= MIN && move != Move.LEFT && col != 1) 
 		{
 		// postcondition
 			currentCol--;
-			currentMove = Move.LEFT;
+			move = Move.LEFT;
 		} 
 		else 
 		{
@@ -93,11 +93,11 @@ public class RobotMonitor
 	public void MoveDown() 
    	{
 		// precondition
-		if (currentMove != Move.DOWN && row <= MAX && row >= MIN  && row != 6)
+		if (move != Move.DOWN && row <= MAX && row >= MIN  && row != 6)
 		{
 		// postcondition
 			currentRow++;
-			currentMove = Move.DOWN;
+			move = Move.DOWN;
 		} 
 		else 
 		{
@@ -109,11 +109,11 @@ public class RobotMonitor
 	public void MoveUp() 
    	{
 		// precondition
-		if (currentMove != Move.UP && row <= MAX && row >= MIN  && row != 1)
+		if (move != Move.UP && row <= MAX && row >= MIN  && row != 1)
 		{
 		// postcondition
 			currentRow--;
-			currentMove = Move.UP;
+			move = Move.UP;
 		} 
 		else 
 		{
@@ -124,12 +124,13 @@ public class RobotMonitor
 	
 	public void Exit()
    	{
+		System.out.println("Exiting...");
 		col = 1;
 		row = 1;
 		currentCol = col;
 		currentRow = row;
 		move = null;
-		currentMove = move;
+		// currentMove = move;
 		
    	}
         

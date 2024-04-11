@@ -60,3 +60,10 @@ wr move:[Move]
     ext rd move:[Move]
     pre true
     post move = move;
+
+    Exit()
+    ext wr row:int
+    wr col:int
+    wr move:[Move]
+    pre col = MAX and row = MAX and move <> nil
+    post row=1 and col=1 and move=nil;
